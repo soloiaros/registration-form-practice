@@ -7,6 +7,72 @@
   <link rel="stylesheet" href="registration-style.css">
 </head>
 <body>
-  
+  <main>
+    <div class="image-section">
+      <img src="static/images/background-photo.jpg" alt="beautiful snowy landscape">
+      <div class="logo-container">
+        <img class="big-logo" src="static/images/logo.svg" alt="a simple outline of a fox">
+        <p class="site-title">FOXXO</p>
+      </div>
+    </div>
+    <div class="functional-section">
+      <p class="motto">This is <em>not</em> a real online service! But we'd bet you wish it was.
+        Join the beautiful community of fox admirers from around the planet.</p>
+      <form action="" method="GET">
+        <div class="form-inputs-section">
+          <h2>Let's do this!</h2>
+          <div class="form-row">
+            <span class="form-control">
+              <label for="first-name">First name</label>
+              <input type="text" name="first-name" id="first-name" required>
+            </span>
+            <span class="form-control">
+              <label for="last-name">Last name</label>
+              <input type="text" name="last-name" id="last-name">
+            </span>
+          </div>
+          <div class="form-row">
+            <span class="form-control">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </span>
+            <span class="form-control">
+              <label for="tel-number">Telephone number</label>
+              <input type="tel" name="tel-number" id="tel-number">
+            </span>
+          </div>
+          <div class="form-row">
+            <span class="form-control">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="password"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,16}$"
+                required>
+            </span>
+            <span class="form-control">
+              <label for="password-repeat">Repeat password</label>
+              <input type="password" id="password-repeat">
+            </span>
+          </div>
+          <div class="password-instructions">
+            <p>Your password must follow these rules:</p>
+            <div class="ruleset">
+              <p class="instruction rule-1">Be between 8 and 16 symbols.</p>
+              <p class="instruction rule-2">Have at least one uppercase letter of latin alphabet.</p>
+              <p class="instruction rule-3">Have at least one lowercase letter of latin alphabet.</p>
+              <p class="instruction rule-4">Have at least one number.</p>
+              <p class="instruction rule-5">Have at least one special symbol.</p>
+            </div>
+          </div>
+        </div>
+        <button type="submit">Create account</button>
+        <p class="login-redirect">Already have an account? <a href="#">Log In</a>.</p>
+      </form>
+    </div>
+  </main>
+  <script src="password-validation.js"></script>
 </body>
 </html>
