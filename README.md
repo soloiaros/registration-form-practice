@@ -1,0 +1,1 @@
+![a screenshot showcasing the UI](static/images/screenshots/UI-example.png)
