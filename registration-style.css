@@ -177,6 +177,22 @@ input:user-valid {
   font-size: 1.5rem;
 }
 
+
+.motto,
+.login-redirect {
+  margin-left: 1rem;
+}
+
+.motto {
+  font-size: 1.5rem;
+  max-width: 60%;
+}
+
+.form-control input:focus {
+  border: 2px solid black;
+  box-shadow: 1px 1px 10px #0000003e;
+}
+
 .functional-section button {
   margin: 0;
   font-family: inherit;
@@ -187,14 +203,15 @@ input:user-valid {
   font-size: 1.1rem;
   border: 3px solid #00000046;
   color: #000000e8;
+  box-shadow: 3px 3px 10px #0000003e;
 }
 
-.motto,
-.login-redirect {
-  margin-left: 1rem;
+.functional-section button:hover {
+  /* background-color: rgba(236, 236, 236, 0.939); */
+  box-shadow: 3px 3px 5px #0000003e;
 }
 
-.motto {
-  font-size: 1.5rem;
-  max-width: 60%;
+.functional-section button:active {
+  transform: translateY(1px) translateX(1px);
+  box-shadow: 2px 2px 5px #0000003e;
 }
